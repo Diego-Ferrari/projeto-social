@@ -3,21 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="estilos/style.css">
+    <title>Projeto Redes Sociais</title>
+    <style>
 
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-image: url(imagens/fundo-madeira.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            border: 2px solid black;
+        }
+
+        .celular{
+            width: 311px;
+            height: 635px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(imagens/frame-iphone.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .tela{
+            width: 271px;
+            height: 478px;
+            position: relative;
+            top: 2px;
+            left: 2px;
+
+        }
+
+        /* .tela-home{
+            width: 271px;
+            height: 478px;
+            position: relative;
+            top: 2px;
+            left: 2px;
+
+        } */
+    </style>
 </head>
 <body>
-    <main>
-        <section class="telefone">
-            <iframe class="home" src="home.html" frameborder="0"></iframe>
+    <div class="container">
+        <div class="celular">
+            <iframe class="tela" src="home.html" frameborder="0">
 
-        </section>
-    </main>
-
-    <section class="redes-sociais">
-
-    </section>
-    
+            </iframe>
+        </div>
+    </div>
 </body>
 </html>
