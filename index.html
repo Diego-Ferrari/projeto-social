@@ -16,6 +16,9 @@
             background-image: url(imagens/fundo-madeira.jpg);
             background-repeat: no-repeat;
             background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .container{
@@ -23,7 +26,6 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            border: 2px solid black;
         }
 
         .celular{
@@ -43,7 +45,30 @@
             position: relative;
             top: 2px;
             left: 2px;
+        }
 
+        .barralateral{
+            height: 500px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: end;
+           
+        }
+
+        .barralateral img{
+            width: 50px;
+            height: 50px;
+            top: 10px;
+            right: 10px;
+            border-radius: 100px;
+            display: block;
+            margin-right: 10px;
+            margin-top: 10px;
+        
         }
 
         /* .tela-home{
@@ -59,10 +84,19 @@
 <body>
     <div class="container">
         <div class="celular">
-            <iframe class="tela" src="home.html" frameborder="0">
+            <iframe class="tela" src="home.html" frameborder="0" name="tela">
 
             </iframe>
         </div>
+    </div>
+    <div class="barralateral">
+        <a href="home.html" target="tela"><img src="imagens/logo-home.jpg" alt=""></a>
+        <a href="imagens/tela-youtube.png" target="tela"><img src="imagens/logo-youtube.jpg" alt=""></a>
+        <a href="https://github.com/Diego-Ferrari" target="tela"><img src="imagens/logo-github.jpg" alt=""></a>
+        <a href="https://www.instagram.com/" target="tela"><img src="imagens/logo-instagram.jpg" alt=""></a>
+        <a href="https://x.com/" target="tela"><img src="imagens/logo-twitter.jpg" alt=""></a>
+        <a href="https://www.facebook.com/diego.ferrari.739/" target="tela"><img src="imagens/logo-facebook.jpg" alt=""></a>
+
     </div>
 </body>
 </html>
